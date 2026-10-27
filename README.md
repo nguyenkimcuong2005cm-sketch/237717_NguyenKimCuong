@@ -53,7 +53,7 @@ Cần cấu hình địa chỉ Backend API phù hợp.
 - **Link_Docker_Frontend:** https://hub.docker.com/r/kimcuong237717/employee-frontend
 - **Link_Render_App:** https://web-237717.onrender.com
 - **Link_Render_API:** https://api-237717.onrender.com/api/employees
-- **Link_Data_MongoDB:** Chờ bổ sung đường dẫn MongoDB Atlas Data Explorer
+- **Link_Data_MongoDB:** https://cloud.mongodb.com/v2/6adf6c95cfd48ff1b406dce6#/explorer/6adf6cdf2527e7d5c4098eda/237717_NguyenKimCuong/employees/find
 
 ## Các chức năng đã xây dựng
 
