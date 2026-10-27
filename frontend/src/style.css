@@ -1,0 +1,286 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.container {
+  width: 94%;
+  max-width: 1450px;
+  margin: 35px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
+}
+
+h1 {
+  margin: 0 0 35px;
+  padding-bottom: 24px;
+  text-align: left;
+  font-size: 28px;
+  font-weight: 750;
+  color: #1e3a8a;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 380px;
+  max-width: 100%;
+  padding: 14px 18px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb;
+  background: white;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+th {
+  background: #eff6ff;
+  color: #1e40af;
+  text-align: left;
+  font-weight: 650;
+  padding: 18px 16px;
+  border-bottom: 2px solid #bfdbfe;
+}
+
+td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr {
+  transition: background 0.2s;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafcff;
+}
+
+tbody tr:nth-child(even):hover {
+  background: #eff6ff;
+}
+
+.container > p:last-child {
+  margin-top: 24px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 96%;
+    padding: 18px;
+    overflow-x: auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  table {
+    min-width: 850px;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-add, .btn-save {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-add:hover, .btn-save:hover {
+  background: #1d4ed8;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat-card span {
+  display: block;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.stat-card strong {
+  font-size: 30px;
+  color: #1e40af;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-edit {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.btn-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-edit:hover {
+  background: #bfdbfe;
+}
+
+.btn-delete:hover {
+  background: #fecaca;
+}
+
+.empty-message {
+  text-align: center;
+  color: #64748b;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: white;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn-cancel {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .toolbar input {
+    width: 100%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
