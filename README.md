@@ -47,9 +47,29 @@ npm run dev
 Cần cấu hình địa chỉ Backend API phù hợp.
 
 ## Liên kết bài thi
-- GitHub: https://github.com/nguyenkimcuong2005cm-sketch/237717_NguyenKimCuong
-- Docker Hub Backend: Chưa triển khai
-- Docker Hub Frontend: Chưa triển khai
-- Render App: Chưa triển khai
-- Render API: Chưa triển khai
-- MongoDB Atlas: Chưa tạo database
+
+- **Link_GitHub:** https://github.com/nguyenkimcuong2005cm-sketch/237717_NguyenKimCuong
+- **Link_Docker_Backend:** https://hub.docker.com/r/kimcuong237717/employee-backend
+- **Link_Docker_Frontend:** https://hub.docker.com/r/kimcuong237717/employee-frontend
+- **Link_Render_App:** https://web-237717.onrender.com
+- **Link_Render_API:** https://api-237717.onrender.com/api/employees
+- **Link_Data_MongoDB:** Chờ bổ sung đường dẫn MongoDB Atlas Data Explorer
+
+## Các chức năng đã xây dựng
+
+- Hiển thị danh sách nhân viên từ MongoDB Atlas.
+- Thêm nhân viên mới.
+- Tìm kiếm nhân viên.
+- Chỉnh sửa thông tin nhân viên.
+- Xóa nhân viên.
+- Hiển thị thông báo kết quả thao tác.
+
+## Triển khai hệ thống
+
+- **Frontend:** React, Vite, Docker, Nginx, Render.
+- **Backend:** Node.js, Express, Docker, Render.
+- **Database:** MongoDB Atlas.
+- **Quản lý mã nguồn:** GitHub.
+- **Lưu trữ Docker image:** Docker Hub.
+
+**Lưu ý bảo mật:** File `.env` chứa thông tin kết nối cơ sở dữ liệu không được đưa lên GitHub.
