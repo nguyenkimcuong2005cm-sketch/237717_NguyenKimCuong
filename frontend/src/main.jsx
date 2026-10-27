@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import axios from "axios";
 import "./style.css";
 
-const API_URL = "http://localhost:5000/api/employees";
+const API_URL = "https://api-237717.onrender.com/api/employees";
 
 const emptyForm = {
   employeeId: "",
